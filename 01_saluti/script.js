@@ -17,11 +17,13 @@ console.log(greeting(userName))
 
 // Bonus
 
-const secondName = 'Pippo';
+
 
 const greetingTwo = anotherName => {
     const greet = 'Ciao' + ' ' + anotherName;
     return greet;
 }
 
-console.log(greetingTwo(secondName));
+const secondName = 'Pippo';
+let secondGreet = greetingTwo(secondName);
+console.log(secondGreet);
