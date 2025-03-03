@@ -15,9 +15,9 @@ function greetDate (name) {
 
     if (hours <= 13 && hours >= 5){
         return `Buongiorno ${name}`;
-    } else if (hours > 13){
+    } else if (hours > 13 && hours < 17){
         return `Buon pomeriggio ${name}`;
-    } else if (hours < 17){
+    } else if (hours > 17){
         return `Buonasera ${name}`;
     }
 }
