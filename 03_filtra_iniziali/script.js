@@ -12,7 +12,6 @@ function initialLetter (arrayNames, initial) {
         if (name[0] === initial) {
             firstInitial.push(name);
         }
-
     }
     return firstInitial;
 }
@@ -23,3 +22,17 @@ console.log(initialLetter(names, initial));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+const initialLetterBonus = (arrayNames, initial) => {
+    let firstInitialBonus = [];
+    for (let i = 0; i < arrayNames.length; i++) {
+        let name = arrayNames[i];
+        if (name[0] === initial) {
+            firstInitialBonus.push(name);
+        }
+    }
+    return firstInitialBonus;
+}
+
+const namesBonus = initialLetterBonus(names, initial);
+console.log(namesBonus);
