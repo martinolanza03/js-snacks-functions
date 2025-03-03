@@ -18,3 +18,17 @@ function nameInitial (arrayNames) {
 console.log(nameInitial(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// Bonus
+const bonusInitial = arrayNamesBonus => {
+    let namesInitial = [];
+    let name = '';
+    for (let i = 0; i < arrayNamesBonus.length; i++) {
+        name = arrayNamesBonus[i];
+        namesInitial.push(name[0]);
+    }
+    return namesInitial;
+}
+
+let namesBonus = bonusInitial(names);
+console.log(namesBonus);
